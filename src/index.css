@@ -1,13 +1,116 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: black;
+}
+
+.box {
+  width: 700px;
+  height: 100%;
+  padding-bottom: 10%;
+  background-color: #f0f0f0;
+  margin: 70px auto;
+}
+
+.tittle {
+  text-align: center;
+  color: #d6d6d6;
+  font-size: 70px;
+  font-weight: 100;
+  padding-top: 10px;
+  padding-bottom: 2px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.boxList {
+  width: 90%;
+  padding: 20px;
+  background-color: #ffffff;
+  margin: auto;
+  box-shadow: 0px 10px 20px 0px #c4c4c4;
+}
+
+.todo-input {
+  margin-bottom: 32px;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  color: #fff;
+}
+
+.enterType {
+  border: none;
+  height: 40px;
+  width: 99%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+  color: #8b8b8b;
+  border-bottom: 1px solid #b6b6b6;
+}
+
+.enterType.edit {
+  border: none;
+  height: 40px;
+  width: 99%;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 200;
+  color: #8b8b8b;
+  border-bottom: 1px solid #b6b6b6;
+}
+
+::placeholder {
+  color: #d8d8d8;
+}
+
+.todo-row {
+  border: none;
+  height: 40px;
+  width: 99%;
+  text-align: left;
+  font-size: 30px;
+  font-weight: 200;
+  color: #8b8b8b;
+  border-bottom: 1px solid #b6b6b6;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.icons {
+  display: flex;
+  align-items: flex-end;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  color: #888888;
+}
+
+.edit-icon {
+  margin-left: 7px;
+  color: #888888;
+}
+
+.length {
+  margin: 14px;
+  border: none;
+  height: 40px;
+  width: 99%;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 200;
+  color: #444444;
 }
